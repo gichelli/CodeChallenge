@@ -1,15 +1,6 @@
 package com.gissella.Ms3Challenge;
 
 import java.io.IOException;
-/**
- * Hello world!
- *
- */
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.List;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
