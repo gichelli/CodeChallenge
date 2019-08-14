@@ -45,7 +45,9 @@ public class NewTable {
 			System.out.println(e.getMessage());
 		}
 	}
-
+/*
+ * Create table for invalid entries
+ */
 	public void invalidTableEntries() {
 		flag = false;
 		// SQLite connection string
