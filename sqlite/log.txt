@@ -1,0 +1,8 @@
+Aug 14, 2019 10:10:46 AM com.gissella.Ms3Challenge.App log
+INFO: # of records received 6002
+Aug 14, 2019 10:10:46 AM com.gissella.Ms3Challenge.App log
+INFO: # of records sucessful 4871
+Aug 14, 2019 10:10:46 AM com.gissella.Ms3Challenge.App log
+INFO: # of records failed 1131
+Aug 14, 2019 10:10:46 AM com.gissella.Ms3Challenge.App log
+INFO: "Databases have been updated sucessfully
