@@ -1,27 +1,20 @@
 package com.gissella.Ms3Challenge;
 
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Properties;
-import java.util.logging.FileHandler;
-import java.util.logging.Logger;
-import java.util.logging.SimpleFormatter;
 
 public class Insert {
 
 	private boolean on;
 
 	/**
-	 * Connect to the test.db database
+	 * Insert valid data
 	 *
 	 */
-
 	public void insertValid(List<String[]> list) {
 		String url = "jdbc:sqlite:C:/Users/Gichelli/eclipse-workspace/Ms3Challenge/sqlite/codingChallenge.db";
 		String sql = "INSERT OR REPLACE INTO users (A, B, C, D,E,F,G,H,I,J) VALUES(?,?,?,?,?,?,?,?,?,?)";
@@ -56,7 +49,11 @@ public class Insert {
 			System.out.println(e.getMessage() + "insert into column error");
 		}
 	}
-
+	
+	/**
+	 * Insert invalid data
+	 *
+	 */
 	public void insertInvalid(List<String[]> list) {
 		String url = "jdbc:sqlite:C:/Users/Gichelli/eclipse-workspace/Ms3Challenge/sqlite/codingChallenge_bad.db";
 		String sql = "INSERT OR REPLACE INTO invalid (A, B, C, D,E,F,G,H,I,J) VALUES(?,?,?,?,?,?,?,?,?,?)";
