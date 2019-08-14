@@ -20,7 +20,6 @@ public class Insert {
 	/**
 	 * Connect to the test.db database
 	 *
-	 * @return the Connection object
 	 */
 
 	public void insertValid(List<String[]> list) {
@@ -50,16 +49,14 @@ public class Insert {
 			conn.commit();
 			conn.close();
 			// add the rest of not valid records to invalid table
+			// InsertAplication app = new InsertAplication();
+			// app.insertInvalid(list);
 		} catch (SQLException e) {
 			e.printStackTrace();
 			System.out.println(e.getMessage() + "insert into column error");
 		}
 	}
 
-	/*
-	 * inserting data into the invalid entries database. Some of the fields
-	 * here are missing
-	 */
 	public void insertInvalid(List<String[]> list) {
 		String url = "jdbc:sqlite:C:/Users/Gichelli/eclipse-workspace/Ms3Challenge/sqlite/codingChallenge_bad.db";
 		String sql = "INSERT OR REPLACE INTO invalid (A, B, C, D,E,F,G,H,I,J) VALUES(?,?,?,?,?,?,?,?,?,?)";
@@ -87,9 +84,8 @@ public class Insert {
 			conn.commit();
 			conn.close();
 		} catch (SQLException e) {
-			System.out.println(e.getMessage() + "invalid insert error");
+			System.out.println(e.getMessage());
 		}
-
 	}
 
 }
